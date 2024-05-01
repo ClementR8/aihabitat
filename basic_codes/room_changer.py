@@ -33,17 +33,13 @@ from habitat_sim.utils import viz_utils as vut
 
 repo = git.Repo(".", search_parent_directories=True)
 dir_path = repo.working_tree_dir
-data_path = os.path.join(dir_path, "scenes")
-output_directory = "videos"  # @param {type:"string"}
+data_path = os.path.join(dir_path, "scenes/")
+output_directory = "videos/"  # @param {type:"string"}
 output_path = os.path.join(dir_path, output_directory)
 os.makedirs(output_path, exist_ok=True)
 
 # Test scene 
 test_scene = os.path.join(data_path, "hm3d-minival/hm3d-minival-glb-v0.2/00800-TEEsavR23oF/TEEsavR23oF.glb")
-#test_scene = os.path.join(data_path, "scene_datasets/mp3d_example/17DRP5sb8fy/17DRP5sb8fy.glb") # Another test scene
-#test_scene = os.path.join(data_path, "scene_datasets/habitat-test-scenes/van-gogh-room.glb") # Another test scene
-#test_scene = os.path.join(data_path, "scene_datasets/mp3d_example/17DRP5sb8fy/17DRP5sb8fy.glb") # Another test scene
-#test_scene = os.path.join(data_path, "scene_datasets/mp3d_example/Example/GLAQ4DNUx5U.glb") # Another test scene
 
 # Scene dataset configuration files
 mp3d_scene_dataset = os.path.join(data_path, "mp3d.scene_dataset_config.json")
