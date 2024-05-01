@@ -1,10 +1,10 @@
 # Habitat Installation
 
-To install the simulator habitat-sim, a tutorial can be followed on the following link : facebookresearch/habitat-sim: A flexible, high-performance 3D simulator for Embodied AI research. (github.com)
+To install the simulator habitat-sim, a tutorial called can be followed on the following link : [facebookresearch/habitat-sim:](https://github.com/facebookresearch/habitat-sim).
 However, a few errors can occur while following the tutorial, so I’ll explain in detail the installation process.
 
 1) Creating a new conda environment 
-To install habitat you need conda on your computer. To do so you can follow the tutorial (Installing conda — conda 24.4.1.dev80 documentation).
+To install habitat you need conda on your computer. To do so you can follow the conda tutorial ([Installing conda — conda 24.4.1.dev80 documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)).
 Assuming that conda is installed on your computer, we can create a new environment that we will call habitat. To do this type the following code lines in the terminal.
    ```bash
    # We require python>=3.9 and cmake>=3.10
@@ -48,11 +48,13 @@ Pressing Enter should launch the code and a window should open. To move the agen
 
 Now you know how to test a code !
 
-A lot of other examples are available on the habitat-sim Github (facebookresearch/habitat-sim: A flexible, high-performance 3D simulator for Embodied AI research. (github.com)) or on my aihabitat Github ClementR8/aihabitat: Repository containing setup codes and basic codes to have basic material and start using AiHabitat (github.com).
+A lot of other examples are available on the habitat-sim Github ([facebookresearch/habitat-sim: A flexible, high-performance 3D simulator for Embodied AI research. (github.com)](https://github.com/facebookresearch/habitat-sim)) or on my aihabitat Github ([ClementR8/aihabitat: Repository containing setup codes and basic codes to have basic material and start using AiHabitat (github.com)](https://github.com/ClementR8/aihabitat)).
 To try the codes you can download them one at a time or clone the repository.
 For example you can type the following command line to copy my repository : 
-git clone https://github.com/ClementR8/aihabitat.git
-Notice my repository uses scenes from the Habitat-Matterport 3D Research Dataset (HM3D), that are not on the repository because of their heavy storage. You need to download them in the following repository : matterport/habitat-matterport-3dresearch (github.com). In my codes only the minival datasets are needed.
+   ```bash
+   git clone https://github.com/ClementR8/aihabitat.git
+   ```
+Notice my repository uses scenes from the Habitat-Matterport 3D Research Dataset (HM3D), that are not on the repository because of their heavy storage. You need to download them in the following repository : [ matterport/habitat-matterport-3dresearch (github.com)](https://github.com/matterport/habitat-matterport-3dresearch). In my codes only the minival datasets are needed.
 
 
 4) Good to know 
