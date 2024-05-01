@@ -32,8 +32,8 @@ def distance(p1,p2):
 
 repo = git.Repo(".", search_parent_directories=True)
 dir_path = repo.working_tree_dir
-data_path = os.path.join(dir_path, "aihabitat/scenes")
-output_directory = "aihabitat/videos/"  # @param {type:"string"}
+data_path = os.path.join(dir_path, "scenes")
+output_directory = "videos"  # @param {type:"string"}
 output_path = os.path.join(dir_path, output_directory)
 os.makedirs(output_path, exist_ok=True)
 
