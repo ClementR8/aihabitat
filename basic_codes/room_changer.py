@@ -34,7 +34,7 @@ from habitat_sim.utils import viz_utils as vut
 repo = git.Repo(".", search_parent_directories=True)
 dir_path = repo.working_tree_dir
 data_path = os.path.join(dir_path, "scenes")
-output_directory = "examples/MyCodes/github_repository/videos/"  # @param {type:"string"}
+output_directory = "videos"  # @param {type:"string"}
 output_path = os.path.join(dir_path, output_directory)
 os.makedirs(output_path, exist_ok=True)
 
