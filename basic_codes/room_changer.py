@@ -33,7 +33,7 @@ from habitat_sim.utils import viz_utils as vut
 
 repo = git.Repo(".", search_parent_directories=True)
 dir_path = repo.working_tree_dir
-data_path = os.path.join(dir_path, "aihabitat/scenes")
+data_path = os.path.join(dir_path, "scenes")
 output_directory = "examples/MyCodes/github_repository/videos/"  # @param {type:"string"}
 output_path = os.path.join(dir_path, output_directory)
 os.makedirs(output_path, exist_ok=True)
@@ -165,7 +165,7 @@ video_prefix = "room-changer"
 
 #Define YOLO model
 #model = YOLO("yolov8n.pt") # Pretrained YOLO model not accurate 
-model_path = os.path.join(dir_path, "aihabitat/image_processing/yolo_model/weights/best.pt")
+model_path = os.path.join(dir_path, "image_processing/yolo_model/weights/best.pt")
 model = YOLO(model_path) # Custom YOLO model
 
 
